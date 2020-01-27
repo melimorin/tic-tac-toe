@@ -10,6 +10,9 @@ Vue.component('game', avecTemplateHtml({
 
     },
     methods: {
+        retour() {
+            this.$emit('cliquer', "accueil")
+        }
         
     }
 }))

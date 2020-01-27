@@ -8,8 +8,8 @@ body {
     margin-right: auto;
 }
 .carre {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: 2px solid rgb(112, 216, 216);
     text-align: center;
 }
