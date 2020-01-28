@@ -1,4 +1,5 @@
 <div>
     <p>Gagnant: {{gagnant}}</p>
+    <p v-if=" gagnant == '' ">Partie nulle</p>
     <btn @click.native="retour">Nouvelle partie</btn>
 </div>

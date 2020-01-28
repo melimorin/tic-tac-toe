@@ -115,7 +115,7 @@ Vue.component('game', avecTemplateHtml({
             }
 
             if (this.a != "" && this.b != "" && this.c != "" && this.d != "" && this.e != "" && this.f != "" && this.g != "" && this.h != "" && this.i != "" ) {
-
+                this.winner()
             }
         
        },
