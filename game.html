@@ -1,20 +1,23 @@
 <div>
     <table class="board-game" >
         <tr>
-            <th class="carre"></th>
-            <th class="carre"></th>
-            <th class="carre"></th>  
+            <th @click="cliquer(1)" class="carre">{{a}}</th>
+            <th @click="cliquer(2)" class="carre">{{b}}</th>
+            <th @click="cliquer(3)" class="carre">{{c}}</th>  
         </tr>
         <tr>
-            <th class="carre"></th>
-            <th class="carre"></th>
-            <th class="carre"></th>
+            <th @click="cliquer(4)" class="carre">{{d}}</th>
+            <th @click="cliquer(5)" class="carre">{{e}}</th>
+            <th @click="cliquer(6)" class="carre">{{f}}</th>
         </tr>
         <tr>
-            <th class="carre"></th>
-            <th class="carre"></th>
-            <th class="carre"></th>
+            <th @click="cliquer(7)" class="carre">{{g}}</th>
+            <th @click="cliquer(8)" class="carre">{{h}}</th>
+            <th @click="cliquer(9)" class="carre">{{i}}</th>
         </tr>
     </table>
-    <button @click="retour">Retour a l'accueil</button>
+    <p>Tour actuel: {{tour}}</p>
+    <btn @click.native="retour">Retour a l'accueil</btn>
 </div>
+
+        

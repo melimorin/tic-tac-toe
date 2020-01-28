@@ -13,3 +13,6 @@ body {
     border: 2px solid rgb(112, 216, 216);
     text-align: center;
 }
+.carre:hover {
+    border: 2px solid rgb(235, 226, 113);
+}

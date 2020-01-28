@@ -5,7 +5,7 @@ import './components/accueil'
 new Vue({
     el: '#app',
     data: {
-        pageActive: "accueil",
+        pageActive: "game",
         afficherBouton: true,
     },
     mounted() {
