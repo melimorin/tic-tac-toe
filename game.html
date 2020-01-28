@@ -1,23 +1,23 @@
 <div>
     <table class="board-game" >
         <tr>
-            <th @click="cliquer(1)" class="carre">{{a}}</th>
-            <th @click="cliquer(2)" class="carre">{{b}}</th>
-            <th @click="cliquer(3)" class="carre">{{c}}</th>  
+            <th @click="cliquer(1)" class="carre" :class="{ actif: a != '' }">{{a}}</th>
+            <th @click="cliquer(2)" class="carre" :class="{ actif: b != '' }">{{b}}</th>
+            <th @click="cliquer(3)" class="carre" :class="{ actif: c != '' }">{{c}}</th>  
         </tr>
         <tr>
-            <th @click="cliquer(4)" class="carre">{{d}}</th>
-            <th @click="cliquer(5)" class="carre">{{e}}</th>
-            <th @click="cliquer(6)" class="carre">{{f}}</th>
+            <th @click="cliquer(4)" class="carre" :class="{ actif: d != '' }">{{d}}</th>
+            <th @click="cliquer(5)" class="carre" :class="{ actif: e != '' }">{{e}}</th>
+            <th @click="cliquer(6)" class="carre" :class="{ actif: f != '' }">{{f}}</th>
         </tr>
         <tr>
-            <th @click="cliquer(7)" class="carre">{{g}}</th>
-            <th @click="cliquer(8)" class="carre">{{h}}</th>
-            <th @click="cliquer(9)" class="carre">{{i}}</th>
+            <th @click="cliquer(7)" class="carre" :class="{ actif: g != '' }">{{g}}</th>
+            <th @click="cliquer(8)" class="carre" :class="{ actif: h != '' }">{{h}}</th>
+            <th @click="cliquer(9)" class="carre" :class="{ actif: i != '' }">{{i}}</th>
         </tr>
     </table>
     <p>Tour actuel: {{tour}}</p>
-    <p>Gagnant: {{tour}}</p>
+    <p>Gagnant: {{gagnant}}</p>
     <btn @click.native="retour">Retour a l'accueil</btn>
 </div>
 

@@ -1,12 +1,14 @@
 import './components/btn'
 import './components/game'
 import './components/accueil'
+import './components/winner'
 
 new Vue({
     el: '#app',
     data: {
-        pageActive: "game",
+        pageActive: "accueil",
         afficherBouton: true,
+        gagnant: null
     },
     mounted() {
        
@@ -14,6 +16,9 @@ new Vue({
     methods: {
         changerPage(page) {
             this.pageActive = page
+        },
+        nomGagnant(gagnant){
+            this.gagnant = gagnant
         }
         
     }

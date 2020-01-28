@@ -12,7 +12,12 @@ body {
     height: 150px;
     border: 2px solid rgb(112, 216, 216);
     text-align: center;
+    color: rgba(0,0,0,0);
+    transition: color 1s ease;
 }
 .carre:hover {
     border: 2px solid rgb(235, 226, 113);
+}
+.carre.actif {
+    color: grey;
 }
