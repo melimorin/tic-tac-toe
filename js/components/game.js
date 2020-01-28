@@ -15,7 +15,8 @@ Vue.component('game', avecTemplateHtml({
             i: "",
             player1: "x",
             player2: "o",
-            tour: "x"
+            tour: "x",
+            gagnant: ""
         
         }
     },
