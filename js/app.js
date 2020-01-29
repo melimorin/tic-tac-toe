@@ -1,7 +1,7 @@
-import './components/btn'
-import './components/game'
-import './components/accueil'
-import './components/winner'
+import './components/btn.js'
+import './components/game.js'
+import './components/accueil.js'
+import './components/winner.js'
 
 new Vue({
     el: '#app',
